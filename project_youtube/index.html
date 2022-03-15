@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>flex란? 행 열을 자유자제로 배치하는 것</h1>
+        <h2>float은 이미지와 텍스트를 어떻게 배치할것 인지를 나타내는 것임</h2>
+        <p>container에 배치하는것으로 </p>
+        <ul>
+            <li>display</li>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>aline-content</li>
+            <li>aline-</li>
+        </ul>
+        <h3>display:flex</h3>
+        <div class="container">
+          <div class="item item1">1</div>
+          <div class="item item2">2</div>
+          <div class="item item3">3</div>
+          <div class="item item4">4</div>
+          <div class="item item5">5</div>
+        </div>
+        <h3>flex-direction, flex-wrap</h3>
+        <p>flex-direction-방향제시, flex-wrap:줄바꿈</p>
+        <div class="container ex1">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+            <div class="item item4">4</div>
+            <div class="item item5">5</div>
+          </div>
+          <h3>중심축에서 아이템들 배치</h3>
+          <p>justify-content</p>
+          <div class="container ex2">
+              <div class="item item1">1</div>
+              <div class="item item2">2</div>
+              <div class="item item3">3</div>
+              <div class="item item4">4</div>
+              <div class="item item5">5</div>
+         </div>
+
+         <h3>반대축에서 아이켐들 배치</h3>
+          <p>aline-items</p>
+          <div class="container ex3">
+              <div class="item item1">1</div>
+              <div class="item item2">2</div>
+              <div class="item item3">3</div>
+              <div class="item item4">4</div>
+              <div class="item item5">5</div>
+         </div>
+         <h3>반대축에서 아이켐들 배치</h3>
+          <p>content</p>
+          <div class="container ex4">
+              <div class="item item1">1</div>
+              <div class="item item2">2</div>
+              <div class="item item3">3</div>
+              <div class="item item4">4</div>
+              <div class="item item5">5</div>
+              <div class="item item1">1</div>
+              <div class="item item2">2</div>
+              <div class="item item3">3</div>
+              <div class="item item4">4</div>
+              <div class="item item5">5</div>
+         </div>
+         <p>item에 배치하는 것으로</p>
+         <ul>
+             <li>order</li>
+             <li>flex-grow</li>
+             <li>flex-shrink</li>
+             <li>flex-basis</li>
+         </ul>
+
+         <h3>item order</h3>
+         <p>순서변경 원래 기본 0 순서를 넣게 되면 안쓴 친구가 0번이기떄문에 앞으로 이동하고 순서가 있는 친구가 뒤로 간다</p>
+         <div class="container ex5">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+
+         </div>
+         
+         <h3>item grow,shrink, basis</h3>
+         <p></p>
+         <div class="container ex6">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+
+         </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,6 @@
+*{margin: 0;padding: 0;}
+body{background: rgb(177, 206, 233); height: 100vh;}
+.phone{width: 496px; height: 1079px; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);background: url(../img/목업.png) no-repeat center center;}
+.content{}
+.content iframe{width: 100%; height: 100%;}
+.phone .content{width: 416px; height: 742px; background: white; position: absolute; top: 159px; left: 43px;}

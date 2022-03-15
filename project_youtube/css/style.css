@@ -1,0 +1,57 @@
+*{margin: 0; padding: 0;}
+body{background: rgb(255, 184, 247);}
+#wrap{width: 1200px;margin: 50px auto; background: rgb(255, 255, 255); padding: 30px; box-sizing: border-box;}
+.container{display: flex; background: rgb(237, 237, 237);}
+
+.item{width: 50px; height: 50px;}
+.item1{ background: turquoise;}
+.item2{background: yellowgreen;}
+.item3{background: yellow;}
+.item4{background: orange;}
+.item5{background: orangered;}
+.ex1{/* flex-direction:row;flex-wrap: wrap; */width: 100%; flex-flow:row wrap ;} /* 기본은 row */ /* column는 아래로 쭉쭉떨어진다 */ /* reverse를 사용해서 순서를 바꿔준다 */
+.ex1 .item{width: 300px; height: 50px;}
+
+@media screen and (max-width: 1200px) {
+    #wrap{width: 100%;}
+    
+}
+/* 화면넓이가 1200px이되면 wrap이 100퍼센트가 된다 */
+
+/* 덩어리를 오른쪽 가운데 왼쪽으로보낼수있다 float left랑 기능이 비슷하다*/
+.ex2{justify-content: left;}
+.ex2{justify-content: center;}
+.ex2{justify-content: right;}
+.ex2{justify-content: flex-start;} /* left랑비슷 */
+.ex2{justify-content: flex-end;}  /*  right랑비슷 */
+.ex2{justify-content: space-between;}  
+.ex2{justify-content:space-around;} 
+.ex2{justify-content:space-evenly;} 
+
+
+
+.ex3{height: 300px; align-items: center;}
+
+
+.ex4{height: 300px; align-items: center; align-content: space-between; flex:0; flex-wrap:wrap; flex-direction: column;}
+.ex4 .item1{ background: turquoise;}
+.ex4 .item2{background: yellowgreen;}
+.ex4 .item3{background: yellow; padding: 30px;}
+.ex4 .item4{background: orange;}
+.ex4 .item5{background: orangered;padding: 20px;}
+
+.ex5 .item1{order: 1;} /* 1을맨뒤로 보낸다 */
+.ex5 .item3{order: 3;}
+
+/* .ex6 .item1{flex-grow: 0; flex-shrink: 1; flex-basis: 50%;}
+.ex6 .item2{flex-grow: 2; flex-shrink: 1; flex-basis: auto;}
+.ex6 .item3{flex-grow: 1; flex-shrink: 1; flex-basis: auto;} */
+
+.ex6 .item1{flex: 1 1 auto;flex-basis: 30%;}
+.ex6 .item2{flex: 1 1 auto;flex-basis: 30%;}
+.ex6 .item3{flex: 1 1 auto; flex-basis: 30%;}
+
+@media screen and (max-width: 1200px) {
+    #wrap{width: 100%;}
+    
+}
