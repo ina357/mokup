@@ -1,6 +1,6 @@
 if (Modernizr.touchevents) {
     // supported
-    //location.href='./mobile/index.html'
+    location.href='https://ina357.github.io/mokup/'
   } else {
     // not-supported
   }
